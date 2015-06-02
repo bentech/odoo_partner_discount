@@ -2,7 +2,7 @@
 from openerp import models, fields
 
 class ResPartnerDiscount(models.Model):
-	
+
     _inherit = 'res.partner'
  
-    discount = fields.Integer()
+    discount = fields.Float(string="Discount %")
